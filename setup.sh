@@ -34,5 +34,8 @@ if [ -d "${WORKSPACE}/vendor" ] ; then
 fi
  
 cd ${BUILDENV}/htdocs
-${BUILDENV}/bin/phpunit --colors -d display_errors=1
+
+ls -lah ${BUILDENV}/htdocs/app/code
+${BUILDENV}/bin/phpunit --colors -d display_errors=1 --list-groups
+
 
