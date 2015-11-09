@@ -37,6 +37,6 @@ cd ${BUILDENV}/htdocs
 
 ls -lah ${BUILDENV}/htdocs/app/code
 ls -lah ${BUILDENV}/htdocs
-${BUILDENV}/bin/phpunit --colors -d display_errors=1 --configuration=${BUILDENV}/htdocs/phpunit.xml.dist --list-groups ${BUILDENV}/htdocs/app
+${BUILDENV}/bin/phpunit --colors -d display_errors=1 --configuration=${BUILDENV}/htdocs/phpunit.xml.dist ${BUILDENV}/htdocs/app
 
 
