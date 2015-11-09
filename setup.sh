@@ -36,6 +36,6 @@ fi
 cd ${BUILDENV}/htdocs
 
 ls -lah ${BUILDENV}/htdocs/app/code
-${BUILDENV}/bin/phpunit --colors -d display_errors=1 --list-groups
+${BUILDENV}/bin/phpunit --colors -d display_errors=1 --list-groups ${BUILDENV}/htdocs
 
 
